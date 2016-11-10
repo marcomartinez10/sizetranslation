@@ -3,6 +3,13 @@
   <head>
     <title>Sizetranslation</title>
     <%= csrf_meta_tags %>
+    <a href="/home/index">HOME</a>
+
+    <% if user_signed_in? %>
+    <li>
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+    </li>
+    <% end %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>

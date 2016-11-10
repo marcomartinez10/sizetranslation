@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
 
   # get '/users/sign_up' => 'devise/registrations#new'
+  resources :infos
+
 
   devise_for :users, :controllers => {:registrations => "registrations"}
   devise_scope :user do

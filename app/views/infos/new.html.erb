@@ -1,0 +1,16 @@
+<%= form_for @info do |f| %>
+  <%= f.label :brand %>:
+  <%= f.text_field :brand %><br />
+
+  <%= f.label :size %>:
+  <%= f.text_field :size %><br />
+
+  <%= f.submit %>
+<% end %>
+
+<h2> YOUR INFO </h2>
+<ul>
+<% current_user.infos.each do |info| %>
+<li><%= info.brand %>: <%= info.size %></li>
+</ul>
+<% end %>
