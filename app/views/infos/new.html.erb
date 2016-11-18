@@ -1,4 +1,4 @@
-<%= form_for @info do |f| %>
+<div id="infos"><%= form_for @info do |f| %>
   <%= f.label :brand %>:
   <%= f.text_field :brand %><br />
 
@@ -14,3 +14,4 @@
 <li><%= info.brand %>: <%= info.size %></li>
 </ul>
 <% end %>
+</div>

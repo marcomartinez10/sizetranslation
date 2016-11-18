@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+    background-image: url(https://media.giphy.com/media/3otPonmZimHyd0ZmBW/giphy.gif);
+    /*background-color: #cccccc;*/
+}
+
+body{
+  font-family: "Raleway", Arial, sans-serif;
+}
